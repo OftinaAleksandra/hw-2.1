@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import com.codeborne.selenide.Selenide.open;
+
 
 public class artifactServiceTest {
     @Test
