@@ -12,7 +12,7 @@ install:
 
 build_script:
   - ps: chmod +x ./gradlew
-  - ps: sudo ./gradlew test --info "-Dselenide.headless=true"  # стартуем Selenide в Headless-режиме (см.ниже)
+  - ps: sudo ./gradlew test --info "-Dselenide.headless=true -Dno-sandbox=true"  # стартуем Selenide в Headless-режиме (см.ниже)
 
 on_finish:
   - ps: Stop-Process -Id $App.Id  # оставливаем SUT
