@@ -21,7 +21,4 @@ dependencies {
 
 test {
     useJUnitPlatform();
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless');
-    systemProperty 'selenide.no-sandbox', System.getProperty('selenide.no-sandbox');
-
 }
